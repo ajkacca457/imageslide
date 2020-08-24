@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/5b1eeceadd.js" crossorigin="anonymous"></script>
+  <title>BgImageSlide</title>
+
+  <style media="screen">
+    body {
+      background: linear-gradient(90deg, rgba(20,133,191,1) 0%, rgba(9,92,121,1) 50%, rgba(2,177,213,1) 100%);
+      height:100vh;
+    }
+
+    .container {
+      width:80%;
+      margin:2% auto;
+      text-align:center;
+    }
+
+    .bgimg {
+      background-image:url("1.jpg");
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:80vh;
+      margin:2%;
+      border:2px white solid;
+    }
+    button {
+      background:transparent;
+      border:none;
+      color:white;
+      transition: all .3s ease-in;
+    }
+    button:hover {
+      transform: scale(1.1);
+      background-color:orangered;
+      border-radius: 5px;
+      border: 2px white solid;
+    }
+    button:focus {
+       outline: none;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="bgimg">
+
+  </div>
+
+<div class="btns">
+  <button type="button" name="button" id="prev"><i class="fas fa-backward fa-3x"></i></button>
+  <button type="button" name="button" id="next"><i class="fas fa-forward fa-3x"></i></button>
+</div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="bgimg.js"></script>
+</body>
+</html>
